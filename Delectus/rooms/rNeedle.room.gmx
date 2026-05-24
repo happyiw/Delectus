@@ -408,7 +408,8 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objFreeTrigger" x="448" y="320" name="inst_057E07B9" locked="0" code="trg='real clear somehow'&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="408" y="256" name="inst_FBCC8B66" locked="0" code="trg='not real clear somehow'&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="print_player_shit" x="16" y="0" name="inst_098C506E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="248" y="204" name="inst_7FB3DEB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSign" x="352" y="288" name="inst_E756188C" locked="0" code="text = &quot;Press I for debug water info&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="248" y="208" name="inst_DC94B04B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

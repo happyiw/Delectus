@@ -1,8 +1,8 @@
 ///engine_options()
 // Sets configurable global options
-
+global.info=0
 //Debug
-global.debugMode = false;           //Enables debug keys (check objWorld step to see all of them), make sure to set this to "false" before releasing your game
+global.debugMode = 1;           //Enables debug keys (check objWorld step to see all of them), make sure to set this to "false" before releasing your game
 global.debugVisuals = true;        //Enables changing the color/alpha of player when infjump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 global.debugKey = vk_control;      //Key required to be held down to activate debug keys. Set to noone to disable
 

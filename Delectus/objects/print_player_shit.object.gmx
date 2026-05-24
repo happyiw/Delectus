@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-40</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>px=0
 py=0
+
 </string>
           </argument>
         </arguments>
@@ -79,6 +80,21 @@ py=0
 draw_set_valign(fa_top)
 draw_text_outline(430,16,'x: '+string(px),c_white,c_black)
 draw_text_outline(430,16+16,'y: '+string(py),c_white,c_black)
+
+if keyboard_check_pressed(ord("I"))
+    global.info=(global.info+1) mod 2
+
+if global.info {
+    with(objWater) {
+        draw_text_outline(x,y-16,"1",c_white,c_black)
+    }
+    with(objWater2) {
+        draw_text_outline(x,y-16,"2",c_white,c_black)
+    }
+    with(objWater3) {
+        draw_text_outline(x,y-16,"3",c_white,c_black)
+    }
+}
 </string>
           </argument>
         </arguments>

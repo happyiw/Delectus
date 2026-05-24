@@ -93,7 +93,7 @@ if (showText)
     
     var yOffset = string_height(text);
     
-    draw_text_outline(x + (sprite_width/2), y - yOffset, text, c_white, c_black);
+    draw_text_outline(x + (sprite_width/2), y + 24 + yOffset, text, c_white, c_black);
 }
 </string>
           </argument>

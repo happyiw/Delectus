@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha=0.4+dsin(current_time/3)*0.05
+            <string>image_alpha=0.3+dsin(current_time/3)*0.05
+if instance_exists(objPlayer)
+    image_alpha-=lerp(0,0.175,clamp(point_distance(400,304,objPlayer.x,objPlayer.y)/300,0,1))
 </string>
           </argument>
         </arguments>
