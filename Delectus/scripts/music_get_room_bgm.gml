@@ -12,6 +12,7 @@ switch (room)
         return -1;
         
     case rCherryBoss:
+    case rClear:
         return -1;
         
     case rMiku:

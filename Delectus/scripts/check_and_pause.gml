@@ -4,7 +4,7 @@
 
 if (global.pauseDelay <= 0)    //Check if pause delay is active
 {
-    if (input_check_pressed(KEY.PAUSE))
+    if (input_check_pressed(KEY.PAUSE)) and global.can_pause
     {
         if (!global.gamePaused)    //Not paused, pause the game
         {

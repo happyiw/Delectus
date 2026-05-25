@@ -20,7 +20,9 @@ a.image_yscale=250;
 a.image_alpha=0.5
 a.image_blend=c_black
 
-instance_create(400,304,objSpotlightTweak)</code>
+instance_create(400,304,objSpotlightTweak)
+
+        global.debugNoDeath=false</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -73,12 +75,11 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objBlock" x="448" y="36" name="inst_841BF11D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="36" name="inst_5F8860FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="772" y="348" name="inst_9BFEC706" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="580" y="348" name="inst_B9E4B805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="584" y="352" name="inst_B9E4B805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="740" y="348" name="inst_F70FCAE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="548" y="348" name="inst_9F8C34F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="448" name="inst_92639DD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="736" y="448" name="inst_284994CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="584" y="448" name="inst_ADEE405E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="100" name="inst_D3921D96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="128" name="inst_63694FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="352" y="128" name="inst_C886B067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -91,19 +92,17 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objBlock" x="416" y="192" name="inst_05E08521" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="352" y="192" name="inst_296F15A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="288" y="192" name="inst_4B2F5346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="472" y="332" name="inst_559FB6C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="476" y="332" name="inst_559FB6C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="472" y="252" name="inst_FDE6D107" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="540" y="252" name="inst_3EBC5BB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="572" y="252" name="inst_83A2CAEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="524" y="300" name="inst_21A67446" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="472" y="300" name="inst_DAF2D3B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="476" y="300" name="inst_DAF2D3B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="196" y="300" name="inst_7FE957B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="712" y="576" name="inst_E4E88C2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="576" name="inst_10BEA9EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="616" y="576" name="inst_1A094903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="584" y="576" name="inst_88AF0945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="624" y="20" name="inst_2FEA5656" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="588" y="212" name="inst_7DE59D4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="128" y="204" name="inst_93C34679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="96" y="204" name="inst_F96AA3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="656" y="120" name="inst_3413C7BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -111,32 +110,28 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeLeft" x="624" y="120" name="inst_8BF40063" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="688" y="152" name="inst_37E2F1F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="720" y="152" name="inst_689C88BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="72" y="152" name="inst_F0D3CFF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeLeft" x="40" y="152" name="inst_D4B37EE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="56" y="148" name="inst_F0D3CFF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="540" y="152" name="inst_E48D1934" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="196" y="152" name="inst_9DBEFE44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="772" y="316" name="inst_B5F84E6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="740" y="316" name="inst_F8238B99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="676" y="316" name="inst_81F873A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="612" y="316" name="inst_0F67F538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="616" y="320" name="inst_0F67F538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="524" y="316" name="inst_90EB859F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="580" y="316" name="inst_4FB29E6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="584" y="320" name="inst_4FB29E6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="548" y="380" name="inst_A17C3043" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="772" y="380" name="inst_0C048C73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="580" y="380" name="inst_4AD5CD14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="528" y="540" name="inst_359A349D" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="424" y="380" name="inst_96B30115" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="392" y="380" name="inst_20A7BB12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="456" y="380" name="inst_D522CB18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="164" y="384" name="inst_DD53D60B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="424" y="444" name="inst_53525B6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="520" y="444" name="inst_3D55B718" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="552" y="444" name="inst_FC16F4D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="520" y="444" name="inst_3D55B718" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="392" y="444" name="inst_AD106460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="456" y="444" name="inst_E14861E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="488" y="444" name="inst_82FD2922" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="252" y="444" name="inst_2A8D4ACF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="520" y="476" name="inst_9D7D123C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="248" y="440" name="inst_2A8D4ACF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="520" y="484" name="inst_9D7D123C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="284" y="564" name="inst_13FF3382" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="448" y="560" name="inst_C59222B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="356" y="560" name="inst_EDB9DE3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -162,7 +157,7 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objBlock" x="72" y="424" name="inst_64A738B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="40" y="424" name="inst_D0E3B652" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="196" y="404" name="inst_878BE3E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="228" y="404" name="inst_B94C8F2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="228" y="396" name="inst_B94C8F2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="72" y="310" name="inst_3071FB41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="72" y="272" name="inst_7CEC3B88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniRight" x="104" y="272" name="inst_AD8783E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -184,7 +179,6 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeRight" x="448" y="224" name="inst_46767601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="320" y="224" name="inst_CEC0350C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="384" y="224" name="inst_E2A8D1E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="478" y="460" name="inst_C6E0B528" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="736" y="480" name="inst_118B9925" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="480" name="inst_B3F932BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="616" y="480" name="inst_D675173A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -196,7 +190,6 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeRight" x="40" y="488" name="inst_B49029F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="200" y="488" name="inst_CD7721B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="556" y="44" name="inst_B085B98D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeLeft" x="648" y="396" name="inst_75AEB120" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="320" y="256" name="inst_2929F55D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="508" y="188" name="inst_A63EDFCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="556" y="188" name="inst_FE47AE9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -207,12 +200,11 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeDown" x="472" y="268" name="inst_A0EC3F76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="540" y="268" name="inst_63CA3E7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="540" y="220" name="inst_3FC4E2D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="572" y="220" name="inst_D02CD1B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="340" y="460" name="inst_428438A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="308" y="460" name="inst_1C786C35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="676" y="284" name="inst_7DF0E3CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="740" y="284" name="inst_1150ACF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="692" y="260" name="inst_9375382D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="692" y="256" name="inst_9375382D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="260" y="260" name="inst_553F7DF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="752" y="248" name="inst_AD4B7BFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="720" y="216" name="inst_6B81B3E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -240,7 +232,6 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeLeft" x="172" y="88" name="inst_442E5D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="220" y="88" name="inst_682FFF9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater2" x="624" y="88" name="inst_1801E9CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="616" y="420" name="inst_02DDA518" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="648" y="428" name="inst_5041C8F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater2" x="648" y="428" name="inst_A92C029D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="520" y="508" name="inst_230B0F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -254,8 +245,8 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeRight" x="372" y="528" name="inst_37C578C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="284" y="532" name="inst_EE6775A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="340" y="528" name="inst_DC8CB526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="228" y="368" name="inst_F2D8F44C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeLeft" x="196" y="368" name="inst_C2FF5B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="228" y="356" name="inst_F2D8F44C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="196" y="364" name="inst_C2FF5B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="212" y="436" name="inst_CA52D532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="196" y="436" name="inst_EBEE0C36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="168" y="456" name="inst_3FF850B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -291,7 +282,6 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objWarp" x="416" y="288" name="inst_70532D61" locked="0" code="if (global.difficulty == 1)&#xA;    roomTo = rClear;&#xA;else&#xA;    roomTo = rFakeClear;&#xA;autosave = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="352" y="288" name="inst_D642910C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="588" y="140" name="inst_4D3F42EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWater3" x="728" y="172" name="inst_6BCD5601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="76" y="52" name="inst_81D6C7E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="108" y="52" name="inst_C59073D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniRight" x="512" y="52" name="inst_58F29D59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -300,7 +290,6 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objMiniUp" x="192" y="208" name="inst_8E9806B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="216" y="208" name="inst_180F6A51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="272" y="208" name="inst_6F01AB74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniUp" x="492" y="208" name="inst_093C85B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="492" y="240" name="inst_53E4E59C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="72" y="240" name="inst_AF2F05AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="160" y="240" name="inst_A1DCE3D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -308,17 +297,11 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSave" x="340" y="580" name="inst_376EF16B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="128" y="196" name="inst_2A2092E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="204" y="83" name="inst_E54AEAF7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="objWater3" x="556" y="12" name="inst_07DA253E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="60" y="12" name="inst_CC716D01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="124" y="12" name="inst_2192E49B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVineL" x="676" y="316" name="inst_D7C0CC34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVineR" x="320" y="256" name="inst_404C9B2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVineR" x="40" y="208" name="inst_C19D3308" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVineR" x="68" y="520" name="inst_A807D42F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVineL" x="50" y="552" name="inst_2DBC159A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="644" y="316" name="inst_5AE4F0E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVineR" x="648" y="396" name="inst_E2D8E8F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVineL" x="556" y="44" name="inst_437C4AA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="204" y="88" name="inst_C0014906" locked="0" code="" scaleX="0.5" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="-28" name="inst_8B72EBAB" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="144" y="188" name="inst_D673CFBC" locked="0" code="visible=true&#xA;trg=1" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -337,8 +320,8 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeUp" x="8" y="520" name="inst_7A48941F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="8" y="584" name="inst_0746B609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniRight" x="392" y="460" name="inst_B7ACA097" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKillerBlock" x="528" y="576" name="inst_2084CBA6" locked="0" code="tag=4" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="556" y="480" name="inst_6036DEB9" locked="0" code="visible=true&#xA;trg=4" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="524" y="544" name="inst_2084CBA6" locked="0" code="tag=4" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="552" y="476" name="inst_6036DEB9" locked="0" code="visible=true&#xA;trg=4" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="540" y="332" name="inst_F70226B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="548" y="348" name="inst_1F21338E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="772" y="284" name="inst_6E622C1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -347,7 +330,7 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objBlock" x="624" y="248" name="inst_6C0CC673" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="608" y="264" name="inst_BCFDD20F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="608" y="248" name="inst_B146DE93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="660" y="156" name="inst_1365157C" locked="0" code="visible=true&#xA;trg=5&#xA;" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="752" y="88" name="inst_1365157C" locked="0" code="visible=true&#xA;trg=7&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="728" y="128" name="inst_E08FA53F" locked="0" code="tag=5" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="752" y="104" name="inst_34D9AB94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="784" y="104" name="inst_6B5C76D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -360,7 +343,6 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objMiniRight" x="376" y="468" name="inst_773AFFB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="360" y="468" name="inst_A226CB32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="196" y="332" name="inst_A775C12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWater3" x="388" y="512" name="inst_BB43EB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBackground" x="0" y="0" name="inst_88030643" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="392" y="264" name="inst_0B040B00" locked="0" code="if (global.difficulty != 1)&#xA;    instance_destroy()&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objWater3" x="12" y="120" name="inst_BCDC30BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -370,20 +352,18 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSpikeLeft" x="72" y="336" name="inst_728CF273" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="216" y="252" name="inst_3AFCA95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="176" y="252" name="inst_DB4FF557" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKillerBlock" x="304" y="524" name="inst_A9CF8483" locked="0" code="tag=6&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="292" y="508" name="inst_A9CF8483" locked="0" code="tag=6&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="232" y="436" name="inst_2331D2A0" locked="0" code="visible=true&#xA;trg=6&#xA;" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="200" y="488" name="inst_5EC04BAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVineR" x="284" y="564" name="inst_AD500392" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVineR" x="284" y="596" name="inst_AACADEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="260" y="396" name="inst_12BCFC17" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="260" y="400" name="inst_12BCFC17" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="308" y="432" name="inst_6E14F544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="356" y="400" name="inst_31DD5907" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="508" y="172" name="inst_5FED7185" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniUp" x="492" y="208" name="inst_4EA0F954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="508" y="140" name="inst_71715564" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="472" y="348" name="inst_019CE7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="476" y="348" name="inst_019CE7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="488" y="380" name="inst_0490945E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="488" y="348" name="inst_443BC6F4" locked="0" code="depth=objBlock.depth+1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="204" y="72" name="inst_88E9EC77" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="216" y="192" name="inst_EF540302" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="128" y="172" name="inst_B555B555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -391,7 +371,7 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSaveBlocker" x="340" y="556" name="inst_A8E37D8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="616" y="448" name="inst_1DBBDC49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="624" y="-12" name="inst_69205876" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniDown" x="540" y="152" name="inst_3D17AF74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="588" y="204" name="inst_3D17AF74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="604" y="140" name="inst_627C9688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="588" y="188" name="inst_A8A0A445" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="588" y="108" name="inst_DB8AA47A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -402,14 +382,78 @@ instance_create(400,304,objSpotlightTweak)</code>
     <instance objName="objSaveBlocker" x="72" y="240" name="inst_B84123AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="72" y="256" name="inst_37EB6601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="200" y="520" name="inst_CD55AD1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="252" y="476" name="inst_A8CD3C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="248" y="472" name="inst_A8CD3C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="232" y="520" name="inst_AADA839B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="720" y="480" name="inst_2206483F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="448" y="320" name="inst_057E07B9" locked="0" code="trg='real clear somehow'&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="448" y="320" name="inst_057E07B9" locked="0" code="trg='real clear somehow'" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="408" y="256" name="inst_FBCC8B66" locked="0" code="trg='not real clear somehow'&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="print_player_shit" x="16" y="0" name="inst_098C506E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSign" x="352" y="288" name="inst_E756188C" locked="0" code="text = &quot;Press I for debug water info&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="248" y="208" name="inst_DC94B04B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="24" y="272" name="inst_99C193EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="364" y="520" name="inst_64F05327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWater2" x="388" y="512" name="inst_0D71BAE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="664" y="596" name="inst_3B763357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="744" y="576" name="inst_54424197" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="776" y="544" name="inst_8DC1D4AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="92" y="160" name="inst_A8932DCC" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="92" y="128" name="inst_E8FC0EC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="104" y="148" name="inst_E5017741" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="72" y="148" name="inst_43498E9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="92" y="160" name="inst_2262EFD9" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="24" y="148" name="inst_4384A193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="40" y="164" name="inst_E0040B46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="48" y="148" name="inst_00DBDB60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="48" y="180" name="inst_163FD85B" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="64" y="160" name="inst_C0FA22B1" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="-8" y="180" name="inst_352D11D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWater2" x="40" y="208" name="inst_BD1EBC27" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="-8" y="196" name="inst_9ADBA0F7" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="-8" y="164" name="inst_40CBBBB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniRight" x="228" y="384" name="inst_7F8A15F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="488" y="476" name="inst_C9646A13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="488" y="460" name="inst_3975BE3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="504" y="460" name="inst_BE958C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="496" y="460" name="inst_EA243E43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="776" y="576" name="inst_BDB714AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="764" y="516" name="inst_1B605A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="520" y="572" name="inst_E50F6BC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="520" y="604" name="inst_3F7B143C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="552" y="476" name="inst_807075C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="568" y="508" name="inst_2E53A5BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="584" y="500" name="inst_D6C7350C" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="552" y="500" name="inst_AE4142C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="688" y="408" name="inst_E7988727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="708" y="420" name="inst_0AB30795" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="724" y="396" name="inst_C6601D8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="700" y="384" name="inst_3CCC2594" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="556" y="220" name="inst_02FD56AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="492" y="192" name="inst_D0AEA15D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="492" y="348" name="inst_4A53D27D" locked="0" code="depth=objBlock.depth+1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="592" y="248" name="inst_39E6A9EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="656" y="152" name="inst_4548AB50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="584" y="448" name="inst_EC9BD1C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWater3" x="592" y="248" name="inst_2F2ACB86" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniUp" x="616" y="304" name="inst_4A05023E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="568" y="288" name="inst_550A22B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="568" y="320" name="inst_0478C1FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWater3" x="676" y="348" name="inst_C39C306A" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="584" y="384" name="inst_DD15D468" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeLeft" x="616" y="416" name="inst_3FCF9EAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="648" y="400" name="inst_EF5A9CBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="616" y="352" name="inst_72CAFA21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniRight" x="648" y="336" name="inst_56D6E38C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniLeft" x="660" y="316" name="inst_657961E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWater2" x="720" y="184" name="inst_01FD4AAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="752" y="184" name="inst_60BEBACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="752" y="216" name="inst_0AA5ACB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWater2" x="572" y="44" name="inst_97717AD1" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="556" y="12" name="inst_9505190E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="752" y="40" name="inst_D891844E" locked="0" code="tag=7&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="704" y="40" name="inst_654EBC5B" locked="0" code="tag=8" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="656" y="152" name="inst_F33AF46C" locked="0" code="visible=true&#xA;trg=5&#xA;depth=-51&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="756" y="36" name="inst_70264290" locked="0" code="visible=true&#xA;trg=8&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objWater3" x="760" y="32" name="inst_85EE9AE0" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -79,9 +79,10 @@ t=0;
             <kind>1</kind>
             <string>t++
 
-if trigger==1 || trigger==2 || trigger==3 || trigger==4 || trigger==5 || trigger==6 {
+if trigger==1 || trigger==2 || trigger==3 || trigger==4 || trigger==5 || trigger==6
+|| trigger==7 || trigger==8 {
     with(objKillerBlock) {
-        if tag==other.trigger
+        if tag==other.trigger || (tag==2 and (other.trigger==2 || other.trigger==3))
             image_alpha-=0.04;
             if image_alpha&lt;=0
                 instance_destroy()
@@ -90,7 +91,22 @@ if trigger==1 || trigger==2 || trigger==3 || trigger==4 || trigger==5 || trigger
 }
 if trigger=='real clear somehow' {
     with(objWarp) {
-        roomTo = rClear
+        a=instance_create(x,y,objFreeTrigger)
+        a.visible=true;
+        a.depth=depth;
+        a.sprite_index=sprite_index;
+        a.trg="ending transition"
+        
+        
+        a=instance_create(416,288,objSign)
+        a.sprite_index=sprWarp
+        a.visible=true;
+        a.depth=depth;
+        a.trg="ending transition"
+        a.depth=-400
+        
+        instance_destroy()
+        //roomTo = rClear
     }
     with(objFreeTrigger) {
         if trg=='not real clear somehow'
@@ -104,6 +120,34 @@ if trigger=='not real clear somehow' {
             instance_destroy()
     }
     instance_destroy()
+}
+
+if trigger=="ending transition" and instance_exists(objPlayer) {
+    if t==1 {
+        /*
+        global.can_f2=false
+        global.can_restart=false
+        global.can_pause=false
+        */
+        global.debugNoDeath=true
+        with(objPlayer) {
+            sprite_index=nothing
+            mask_index=nothing
+            frozen=true
+            image_alpha=0
+            image_xscale=0
+            image_yscale=0
+        }
+        
+        instance_destroy(print_player_shit)
+        
+        instance_create(0,0,everything_will_crumble_apart)
+    }
+    
+    with(objPlayer) {
+        x=400
+        y=304
+    }
 }
 </string>
           </argument>

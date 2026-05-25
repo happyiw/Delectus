@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>frozen = false; //Sets if the player can move or not
 
+
 jumpSpeed = 8.5 * global.grav; //Set how fast the player jumps
 djumpSpeed = 7 * global.grav; //Sets how fast the player double jumps
 gravity = 0.4 * global.grav; //Player gravity

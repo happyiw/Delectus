@@ -118,7 +118,7 @@ if (global.gameStarted)
     
     if (!global.gamePaused)
     {
-        if (input_check_pressed(KEY.RESTART))
+        if (input_check_pressed(KEY.RESTART)) and global.can_restart
         {
             //Stop death sound/music
             audio_stop_sound(global.deathSound);
@@ -347,7 +347,7 @@ if (keyboard_check_pressed(vk_escape))
     game_end();
 }
 
-if (keyboard_check_pressed(vk_f2))
+if (keyboard_check_pressed(vk_f2)) and global.can_f2
 {
     restart_game();
     exit;
@@ -438,9 +438,9 @@ if (Id == global.httpUpdateCheck)
             <string>///Fade current music out
 global.musicFading = true;
 global.currentGain = audio_sound_get_gain(global.currentMusic);
-audio_sound_gain(global.currentMusic, 0, 1000);    //Fade out music over 1 second
+audio_sound_gain(global.currentMusic, 0, 3000);    //Fade out music over 1 second
 
-alarm[0] = 50;  //Pause music when it's done fading
+alarm[0] = 150;  //Pause music when it's done fading
 </string>
           </argument>
         </arguments>

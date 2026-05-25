@@ -50,6 +50,7 @@
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\sprBlockMask</sprite>
+      <sprite>sprites\smallerblock</sprite>
       <sprite>sprites\sex</sprite>
       <sprite>sprites\sprBlockMaskCentered</sprite>
       <sprite>sprites\sprMiniBlockMask</sprite>
@@ -125,7 +126,11 @@
     <sprite>sprites\sprTitle</sprite>
     <sprite>sprites\sprIcon</sprite>
     <sprite>sprites\particle</sprite>
+    <sprite>sprites\light</sprite>
     <sprite>sprites\sprite</sprite>
+    <sprite>sprites\nothing</sprite>
+    <sprite>sprites\ending</sprite>
+    <sprite>sprites\endinghitbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -133,6 +138,7 @@
     <background>background\bJumpThrough</background>
     <background>background\bTree</background>
     <background>background\bStars</background>
+    <background>background\background</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pathExample</path>
@@ -262,6 +268,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shGrayWaves.shader</shader>
+    <shader type="GLSLES">shaders\shWaterDistortion.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -388,6 +395,12 @@
     <object>objects\objSpotlightTweak</object>
     <object>objects\objTitle</object>
     <object>objects\print_player_shit</object>
+    <object>objects\idk</object>
+    <object>objects\lightobj</object>
+    <object>objects\ggs</object>
+    <object>objects\objPShaderEffect</object>
+    <object>objects\everything_will_crumble_apart</object>
+    <object>objects\random_bullshit</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">
