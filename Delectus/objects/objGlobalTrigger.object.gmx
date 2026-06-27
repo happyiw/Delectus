@@ -87,6 +87,20 @@ if trigger==1 || trigger==2 || trigger==3 || trigger==4 || trigger==5 || trigger
             if image_alpha&lt;=0
                 instance_destroy()
     }
+    with(triggerlight) {
+        if trg==other.trigger {
+            repeat(5) {
+                a=instance_create(x,y,idkagain)
+                a.sprite_index=sprite_index;
+                a.image_xscale=image_xscale;
+                a.image_yscale=image_yscale;
+                a.direction=random(360);
+                a.speed=random_range(1,2);
+            }
+            instance_destroy()
+            
+        }
+    }
     if t==50 instance_destroy()
 }
 if trigger=='real clear somehow' {
@@ -138,6 +152,16 @@ if trigger=="ending transition" and instance_exists(objPlayer) {
             image_xscale=0
             image_yscale=0
         }
+        
+        
+            with(triggerlight) {
+                a=instance_create(x,y,idkagain)
+                a.sprite_index=sprite_index;
+                a.image_xscale=image_xscale;
+                a.image_yscale=image_yscale;
+                instance_destroy()
+               
+            }
         
         instance_destroy(print_player_shit)
         

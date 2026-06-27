@@ -127,10 +127,15 @@
     <sprite>sprites\sprIcon</sprite>
     <sprite>sprites\particle</sprite>
     <sprite>sprites\light</sprite>
+    <sprite>sprites\triggerlightsprite</sprite>
+    <sprite>sprites\newlight</sprite>
+    <sprite>sprites\yetanotherlight</sprite>
     <sprite>sprites\sprite</sprite>
     <sprite>sprites\nothing</sprite>
     <sprite>sprites\ending</sprite>
     <sprite>sprites\endinghitbox</sprite>
+    <sprite>sprites\vines_sprite</sprite>
+    <sprite>sprites\old</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -139,6 +144,7 @@
     <background>background\bTree</background>
     <background>background\bStars</background>
     <background>background\background</background>
+    <background>background\vinesbg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pathExample</path>
@@ -265,6 +271,10 @@
       <script>scripts\string_concat.gml</script>
       <script>scripts\color_multiply.gml</script>
     </scripts>
+    <script>scripts\scrGoodDrawGUI.gml</script>
+    <script>scripts\scrDrawTextOutlineTransformed.gml</script>
+    <script>scripts\scrResetGoodDrawGUI.gml</script>
+    <script>scripts\scrSinusoidEaseIn.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shGrayWaves.shader</shader>
@@ -396,11 +406,18 @@
     <object>objects\objTitle</object>
     <object>objects\print_player_shit</object>
     <object>objects\idk</object>
+    <object>objects\idkagain</object>
     <object>objects\lightobj</object>
     <object>objects\ggs</object>
     <object>objects\objPShaderEffect</object>
+    <object>objects\vines_wavy</object>
+    <object>objects\triggerlight</object>
     <object>objects\everything_will_crumble_apart</object>
     <object>objects\random_bullshit</object>
+    <object>objects\vines</object>
+    <object>objects\fadeout</object>
+    <object>objects\objRNGTextTemplate</object>
+    <object>objects\mouse_hover</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init">

@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-8</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,43 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>list=ds_list_create()
+            <string>event_inherited();
+surf=noone
 
-with(objBlock) {
-    ds_list_add(other.list,id)
-}
+shader=shWaterDistortion;
 
-with(objPlayerKiller) {
-    ds_list_add(other.list,id)
-}
 
-with(objWater) {
-    ds_list_add(other.list,id)
-}
-with(objWater2) {
-    ds_list_add(other.list,id)
-}
-with(objSave) {
-    ds_list_add(other.list,id)
-}
-with(objSign) {
-    //if sprite_index!=sprWarp
-        ds_list_add(other.list,id)
-}
-with(objVineL) {
-    ds_list_add(other.list,id)
-}
-with(objVineR) {
-    ds_list_add(other.list,id)
-}
-with(objPlatform) {
-    ds_list_add(other.list,id)
-}
+t=0;
+t_inc=0.25;
+intensity=0.04;
 
-ds_list_shuffle(list)
-
-timer=irandom_range(10,20)
-t=0
+tag=0;
 </string>
           </argument>
         </arguments>
@@ -84,31 +58,7 @@ t=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ds_list_destroy(list)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(0,0,random_bullshit)
-instance_destroy()
+            <string>if(surface_exists(surf)) surface_free(surf);
 </string>
           </argument>
         </arguments>
@@ -131,82 +81,8 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>t++
+            <string>t+=t_inc;
 
-if t&lt;=50 {
-    with(objFreeTrigger) {
-        image_alpha-=0.02
-        if image_alpha&lt;=0
-            instance_destroy()
-    }
-    with(idkagain) {
-        image_alpha-=0.01
-        if image_alpha&lt;=0
-            instance_destroy()
-    
-    }
-    with(vines_wavy) {
-        image_alpha-=0.02
-        if image_alpha&lt;=0
-            instance_destroy()
-    
-    }
-}
-
-if t&gt;=50 {
-   
-    
-    with(all) {
-        _id=ds_list_find_index(other.list,id)
-        if _id!=-1 {
-            x=xstart+random(clamp((other.t-50)/130,0,3))*choose(-1,1)
-            y=ystart+random(clamp((other.t-50)/130,0,3))*choose(-1,1)
-        
-        }
-    }
-    if t&gt;=150 {
-        if ds_list_size(list)!=0 {
-            timer--;
-            if timer==0 {
-                repeat(irandom_range(1,6)) {
-                    if ds_list_size(list)!=0 {
-                        _id=ds_list_find_value(list,0)
-                        
-                        with(all) {
-                            if id==other._id {
-                                a=instance_create(x,y,idk)
-                                a.sprite_index=sprite_index;
-                                a.gravity=random_range(0.2,0.4)
-                                a.image_speed=0
-                                a.depth=depth
-                                a.image_xscale=image_xscale;
-                                a.image_yscale=image_yscale;
-                                instance_destroy()
-                            }
-                        }
-                        
-                        ds_list_delete(list,0)
-                    }
-                }
-                
-                timer=irandom_range(5,10)
-            }
-        }
-        else {
-            /*
-            if timer!=-1 {
-                alarm[0]=100
-                timer=-1
-            }
-            */
-            if !instance_exists(idk) and timer!=-1 {
-                alarm[0]=20
-                timer=-1
-            }
-        }
-        
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -229,7 +105,7 @@ if t&gt;=50 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
+            <string>if(surface_exists(surf)) surface_free(surf);
 </string>
           </argument>
         </arguments>
@@ -252,7 +128,73 @@ if t&gt;=50 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
+            <string>if(surface_exists(surf)) surface_free(surf);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !surface_exists(surf) {
+    surf=surface_create(800,608)
+}
+
+surface_set_target(surf)
+
+draw_set_alpha(1)
+draw_clear_alpha(c_black,0)
+draw_sprite_ext(old,0,0,0,1,1,0,c_white,0.8*image_alpha)
+draw_sprite_ext(old,1,0,0,1,1,0,c_white,0.65*image_alpha)
+draw_sprite_ext(old,2,0,0,1,1,0,c_white,0.5*image_alpha)
+
+with(triggerlight) {
+    //newlight
+    //triggerlightsprite
+    //yetanotherlight
+    draw_set_blend_mode(bm_add)
+    draw_sprite_ext(yetanotherlight,0,x,y,image_xscale*(1.2+dsin(other.t)*0.1),image_yscale*(1.2+dsin(other.t)*0.1),image_angle,image_blend,1)
+    draw_set_blend_mode(bm_normal)
+}
+
+with(idkagain) {
+    //newlight
+    //triggerlightsprite
+    //yetanotherlight
+    draw_set_blend_mode(bm_add)
+    draw_sprite_ext(yetanotherlight,0,x,y,image_xscale*(1.2+dsin(other.t)*0.1),image_yscale*(1.2+dsin(other.t)*0.1),image_angle,image_blend,image_alpha)
+    draw_set_blend_mode(bm_normal)
+}
+
+surface_reset_target()
+
+var shaderTimerHandle=shader_get_uniform(shader,"time");
+var shaderIntensityHandle=shader_get_uniform(shader,"intensity");
+
+
+shader_set(shader);
+shader_set_uniform_f(shaderTimerHandle,t/50);
+shader_set_uniform_f(shaderIntensityHandle,intensity);
+draw_set_alpha(1);
+draw_surface(surf,0,0)
+shader_reset();
+
+
 </string>
           </argument>
         </arguments>

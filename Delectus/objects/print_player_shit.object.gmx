@@ -28,6 +28,9 @@
             <string>px=0
 py=0
 
+size=800
+cam_x=0
+cam_y=0
 </string>
           </argument>
         </arguments>
@@ -54,6 +57,26 @@ py=0
     px=objPlayer.x;
     py=objPlayer.y;
 }
+
+if global.debugMode {
+    if mouse_wheel_down() {
+        size=lerp(size,800,0.1)
+        
+        cam_x=clamp(mouse_x-size/2,0,800-size)
+        cam_y=clamp(mouse_y-(size/1.3157)/2,0,608-(size/1.3157))
+    }
+    if mouse_wheel_up() {
+        size=lerp(size,200,0.1)
+        
+        cam_x=clamp(mouse_x-size/2,0,800-size)
+        cam_y=clamp(mouse_y-(size/1.3157)/2,0,608-(size/1.3157))
+    }
+}
+view_xview[0]=lerp(view_xview[0],cam_x,0.1)
+view_yview[0]=lerp(view_yview[0],cam_y,0.1)
+
+view_wview[0]=lerp(view_wview[0],size,0.1)
+view_hview[0]=view_wview[0]/1.3157
 </string>
           </argument>
         </arguments>
@@ -84,6 +107,12 @@ draw_text_outline(430,16+16,'y: '+string(py),c_white,c_black)
 if keyboard_check_pressed(ord("I"))
     global.info=(global.info+1) mod 2
 
+if keyboard_check_pressed(ord("T"))
+    global.triggerinfo=(global.triggerinfo+1) mod 2
+    
+if keyboard_check_pressed(ord("G")) and global.debugMode
+    global.showgrid=(global.showgrid+1) mod 2
+    
 if global.info {
     with(objWater) {
         draw_text_outline(x,y-16,"1",c_white,c_black)
@@ -94,6 +123,29 @@ if global.info {
     with(objWater3) {
         draw_text_outline(x,y-16,"3",c_white,c_black)
     }
+}
+
+if global.triggerinfo {
+    with(objFreeTrigger) {
+        if trg&gt;=1 and trg&lt;=8
+            draw_self()
+    }
+}
+
+if global.showgrid {
+    draw_set_alpha(0.25)
+    for (i=0; i&lt;800; i+=4) {
+        draw_line_colour(i-1,0,i-1,608,c_white,c_white)
+    }
+    for (j=0; j&lt;608; j+=4) {
+        draw_line_colour(0,j-1,800,j-1,c_white,c_white)
+    }
+    draw_set_alpha(1)
+}
+
+if global.debugMode {
+    draw_set_valign(fa_bottom)
+    draw_text_outline(mouse_x,mouse_y,string((mouse_x div 4)*4)+" "+string((mouse_y div 4)*4),c_white,c_black)
 }
 </string>
           </argument>

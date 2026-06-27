@@ -36,7 +36,7 @@ if (exists[index])
     
     if clear[index] {
         draw_set_font(fDefault24);
-        draw_text(xx + 63, yy + 215, "Clear!!");
+        draw_text(xx + 63, yy + 215, "Over.");
     }
     
     // Boss items
